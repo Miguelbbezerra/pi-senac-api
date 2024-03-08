@@ -12,10 +12,7 @@
     "sourceMap": true,
     "rootDirs": ["src", "tests"],
     "baseUrl": "src",
-    "paths": {
-      "@/tests/*": ["./tests/*"],
-      "@/*": ["*"]
-    },
+    "paths": {},
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
 
