@@ -1,5 +1,5 @@
 const env = {
-  PORT_SERVER: process.env.PORT ?? 3000,
+  PORT_SERVER: process.env.PORT ?? 5000,
   DB_USER: process.env.DB_USER ?? 'pi-senac-user',
   DB_PASSWORD: process.env.DB_PASSWORD ?? 'pi-senac',
   DB_HOST: process.env.DB_HOST ?? 'db',

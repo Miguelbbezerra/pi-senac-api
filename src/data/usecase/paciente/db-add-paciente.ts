@@ -1,6 +1,6 @@
-import { Paciente } from "../../domain/model/paciente";
-import { AddPaciente, PacienteModel } from "../../domain/usecase/add-paciente";
-import { AddPacienteRepository } from "../protocols/db/add-paciente-repository";
+import { Paciente } from "../../../domain/model/paciente";
+import { AddPaciente, PacienteModel } from "../../../domain/usecase/add-paciente";
+import { AddPacienteRepository } from "../../protocols/db/paciente/add-paciente-repository";
 
 export class DbAddPaciente implements AddPaciente {
   private readonly addPacienteRepository: AddPacienteRepository;

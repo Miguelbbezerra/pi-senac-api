@@ -1,5 +1,5 @@
 import validator from 'validator'
-import { DbAddpodologo } from '../../../data/usecase/db-add-podologo'
+import { DbAddpodologo } from '../../../data/usecase/podologo/db-add-podologo'
 import { AddPodologoModel } from '../../../domain/usecase/add-podologo'
 import { InvalidParamError } from '../../../presentation/errors'
 import { badRequest, ok, serverError } from '../../../presentation/helpers/http-helper'

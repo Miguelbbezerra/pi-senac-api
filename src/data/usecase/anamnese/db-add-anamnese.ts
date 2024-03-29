@@ -1,6 +1,6 @@
-import { Anamnese } from "@/domain/model/anamnese";
-import { AddAnamnese, AnamneseModel } from "../../domain/usecase/add-anamnese";
-import { AddAnamneseRepository } from "../protocols/db/add-anamnese-repository";
+import { Anamnese } from "../../../domain/model/anamnese";
+import { AddAnamnese, AnamneseModel } from "../../../domain/usecase/add-anamnese";
+import { AddAnamneseRepository } from "../../protocols/db/anamnese/add-anamnese-repository";
 
 export class DbAddAnamnese implements AddAnamnese {
   private readonly anamneseRepository: AddAnamneseRepository

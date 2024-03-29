@@ -1,7 +1,7 @@
-import { Podologo } from "../../domain/model/podologo"
-import { AddPodologo, AddPodologoModel } from "../../domain/usecase/add-podologo"
-import { AddPodologoRepository } from "../protocols/db/add-podologo-repository"
-import { Encrypter } from "../protocols/encrypter"
+import { Podologo } from "../../../domain/model/podologo"
+import { AddPodologo, AddPodologoModel } from "../../../domain/usecase/add-podologo"
+import { AddPodologoRepository } from "../../protocols/db/podologo/add-podologo-repository"
+import { Encrypter } from "../../protocols/encrypter"
 
 export class DbAddpodologo implements AddPodologo {
   private readonly encrypter: Encrypter

@@ -1,6 +1,6 @@
-import { Agendamento } from "@/domain/model/agendamento";
-import { AddAgendamento, AgendamentoModel } from "../../domain/usecase/add-agendamento";
-import { AddAgendamentoRepository } from "../protocols/db/add-agendamento-repository";
+import { Agendamento } from "../../../domain/model/agendamento";
+import { AddAgendamento, AgendamentoModel } from "../../../domain/usecase/add-agendamento";
+import { AddAgendamentoRepository } from "../../protocols/db/agendamento/add-agendamento-repository";
 
 export class DbAgendamento implements AddAgendamento {
   private readonly agendamentoRepository: AddAgendamentoRepository

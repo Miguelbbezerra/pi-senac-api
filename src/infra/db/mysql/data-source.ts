@@ -11,10 +11,10 @@ const SnakeNamingStrategy =
 
 export const AppDataSource = new DataSource({
   type: 'mysql',
-  host: 'db',
+  host: '192.168.23.9',
   port: 3306,
-  username: 'pi-senac-user',
-  password: 'pi-senac',
+  username: 'jhonatasobral',
+  password: 'Jhon@t@87',
   database: 'sistema_podologia',
   synchronize: true,
   metadataTableName: 'meta_data_custom',
