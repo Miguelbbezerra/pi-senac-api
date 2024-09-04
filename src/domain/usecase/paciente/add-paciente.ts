@@ -1,4 +1,4 @@
-import { Paciente } from "../model/paciente";
+import { Paciente } from '../../model/paciente'
 
 export interface PacienteModel {
   nome: string
@@ -11,5 +11,5 @@ export interface PacienteModel {
 }
 
 export interface AddPaciente {
-  add (pacienteModel: PacienteModel): Promise<Paciente>
+  add(pacienteModel: PacienteModel): Promise<Paciente>
 }

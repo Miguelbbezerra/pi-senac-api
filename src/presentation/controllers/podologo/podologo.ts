@@ -1,8 +1,12 @@
 import validator from 'validator'
 import { DbAddpodologo } from '../../../data/usecase/podologo/db-add-podologo'
-import { AddPodologoModel } from '../../../domain/usecase/add-podologo'
+import { AddPodologoModel } from '../../../domain/usecase/podologo/add-podologo'
 import { InvalidParamError } from '../../../presentation/errors'
-import { badRequest, ok, serverError } from '../../../presentation/helpers/http-helper'
+import {
+  badRequest,
+  ok,
+  serverError
+} from '../../../presentation/helpers/http-helper'
 import {
   Controller,
   HttpRequest,
@@ -11,10 +15,10 @@ import {
 
 export class PodologoController implements Controller {
   private readonly addPodologo: DbAddpodologo
-  constructor (addPodologo: DbAddpodologo) {
+  constructor(addPodologo: DbAddpodologo) {
     this.addPodologo = addPodologo
   }
-  async handle (httpRequest: HttpRequest): Promise<HttpResponse> {
+  async handle(httpRequest: HttpRequest): Promise<HttpResponse> {
     try {
       const body = httpRequest.body
 
@@ -23,9 +27,11 @@ export class PodologoController implements Controller {
         return badRequest(new InvalidParamError('cpf'))
       }
 
-      if (!validator.isDate(body.dataNascimento, {
-        format: 'YYYY-mm-dd'
-      })) {
+      if (
+        !validator.isDate(body.dataNascimento, {
+          format: 'YYYY-mm-dd'
+        })
+      ) {
         return badRequest(new InvalidParamError('dataNascimento'))
       }
       const podologoDto: AddPodologoModel = {

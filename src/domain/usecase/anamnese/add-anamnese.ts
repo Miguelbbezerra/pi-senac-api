@@ -1,6 +1,6 @@
-import { Anamnese } from "../model/anamnese"
-import { Paciente } from "../model/paciente"
-import { Podologo } from "../model/podologo"
+import { Anamnese } from '../../model/anamnese'
+import { Paciente } from '../../model/paciente'
+import { Podologo } from '../../model/podologo'
 
 export interface AnamneseModel {
   paciente: Paciente
@@ -42,5 +42,5 @@ export interface AnamneseModel {
 }
 
 export interface AddAnamnese {
-  add (anamneseModel: AnamneseModel): Promise<Anamnese>
+  add(anamneseModel: AnamneseModel): Promise<Anamnese>
 }
