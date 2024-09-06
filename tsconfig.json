@@ -11,8 +11,14 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "rootDirs": ["src", "tests"],
-    "baseUrl": "src",
-    "paths": {},
+    "baseUrl": "./src",
+    "paths": {
+      "@data": ["data/*"],
+      "@domain": ["domain/*"],
+      "@infra": ["infra/*"],
+      "@main": ["/*main"],
+      "@presentation": ["presentation/*"]
+    },
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
 

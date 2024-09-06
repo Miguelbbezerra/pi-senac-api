@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "nodemon --exec ts-node src/main/server.ts",
     "build": "webpack",
-    "start": "node dist/bundle.js",
+    "start": "ts-node src/main/server.ts",
     "up": "docker-compose up -d",
     "down": "docker-compose down",
     "check": "npm-check -s -u",
